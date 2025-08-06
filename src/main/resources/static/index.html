@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+ <h1>
+     upload your json here
+ </h1><br><br>
+ <form action="http://localhost:8600/file/uploadFile" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".json" required placeholder="upload package.json file here">
+    <input type="hidden" name="name" value="package">
+    <button type="submit"> upload </button>
+ </form>
+</body>
+</html>
